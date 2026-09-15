@@ -67,7 +67,7 @@ st.markdown("""
 @st.cache_data
 def load_mock_data():
     # Generate mock price data untuk XAUUSD
-    dates = pd.date_range(end=datetime.now(), periods=100, freq='15T')
+    dates = pd.date_range(end=datetime.now(), periods=100, freq='15min')
     df = pd.DataFrame(index=dates)
     
     # Random walk for XAUUSD price around 2300
